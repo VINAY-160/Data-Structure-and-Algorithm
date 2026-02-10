@@ -1,0 +1,28 @@
+# ===== OS (macOS) =====
+.DS_Store
+
+# ===== VS Code =====
+.vscode/
+!.vscode/extensions.json
+
+# ===== Build / Output files =====
+a.out
+*.out
+*.exe
+
+# ===== Debug & macOS build artifacts =====
+*.dSYM/
+*.o
+
+# ===== CMake (if ever used) =====
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ===== Temporary / logs =====
+*.log
+*.tmp
+
+# ===== Folder you used for compiled output =====
+output/
