@@ -26,3 +26,4 @@ Makefile
 
 # ===== Folder you used for compiled output =====
 output/
+test.cpp

@@ -14,13 +14,46 @@ using namespace std;
 //   return 0;
 // }
 
+// int main()
+// {
+//   vector<int> v = {1, 2, 3, 4, 5, 6};
+//   vector<int>::iterator it = v.begin();
+//   // cout << *it<<" "<<endl;
+//   // it++;
+//   // ++it;
+//   // cout << *it;
+//   cout<<v.back ();
+// }
+
+int euclidAlgo(int a, int b)
+{
+  int gcd;
+  a=max(a,b);
+  while (b != 0)
+  {
+    gcd = a % b;
+    a = b;
+    b = gcd;
+  }
+  return a;
+}
+
+int lcm(int a, int b)
+{
+  int lcm;
+  for (int i = 2; i <= max(a, b); i++)
+  {
+    if ((a % i == 0) || (b % i == 0))
+    {
+      lcm *= i;
+    }
+  }
+  return lcm;
+}
 int main()
 {
-  vector<int> v = {1, 2, 3, 4, 5, 6};
-  vector<int>::iterator it = v.begin();
-  // cout << *it<<" "<<endl;
-  // it++;
-  // ++it;
-  // cout << *it;
-  cout<<v.back ();
+  int gcd = euclidAlgo(24, 18);
+  cout << "GCD OF 0,18 IS: " << gcd;
+  int lcm1 = lcm(24, 18);
+  cout << "\nLCM OF 0,18 IS: " << lcm1;
 }
