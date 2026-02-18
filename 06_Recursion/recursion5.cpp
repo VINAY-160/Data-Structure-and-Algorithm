@@ -28,3 +28,5 @@ int main()
     }
    
 }
+
+void revArray(int arr[],)
