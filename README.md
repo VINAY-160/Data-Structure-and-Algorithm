@@ -1,12 +1,7 @@
 # 🚀 Data Structure And Algorithms Journey!!
 
-![Image](https://imgv2-1-f.scribdassets.com/img/document/652508600/original/127dbb7641/1?v=1)
-
-![Image](https://pbs.twimg.com/media/GRqgKswbMAEwnEj.jpg)
-
 ![Image](https://cdn-icons-png.flaticon.com/512/25/25231.png)
 
-![Image](https://icon-icons.com/download-file?file=https%3A%2F%2Fimages.icon-icons.com%2F2428%2FPNG%2F512%2Fgithub_black_logo_icon_147128.png\&id=147128\&pack_or_individual=pack)
 
 ---
 
