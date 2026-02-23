@@ -93,7 +93,8 @@ int main()
   int n=5;
   int nth=fib(n);
   cout<<"nth term is: "<<nth;
-
+  int arr[]={1,2,3,4};
+  cout<<" "<<arr[2-1];
 
   return 0;
 }
