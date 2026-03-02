@@ -62,26 +62,46 @@ using namespace std;
 //   return rev(n-1);
 // }
 
-#include <iostream>
-using namespace std;
+int fib(int n)
+{
+  int f = 0, s = 1;
 
-int fib(int n){
-    int f = 0, s = 1;
+  if (n >= 1)
+    cout << f << ",";
+  if (n >= 2)
+    cout << s << ",";
 
-    if(n >= 1) cout << f << ",";
-    if(n >= 2) cout << s << ",";
+  for (int i = 3; i <= n; i++)
+  {
+    int next = f + s;
+    cout << next << ",";
+    f = s;
+    s = next;
+  }
 
-    for(int i = 3; i <= n; i++){
-        int next = f + s;
-        cout << next << ",";
-        f = s;
-        s = next;
-    }
-
-    return s;   // nth fibonacci return karega
+  return s; // nth fibonacci return karega
 }
 
+void bubbleSort(int arr[], int n)
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        bool swapped = false;
 
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                swap(arr[j], arr[j + 1]);
+                swapped = true;
+            }
+        }
+
+        // Optimization: Stop if already sorted
+        if (!swapped)
+            break;
+    }
+}
 
 int main()
 {
@@ -90,11 +110,13 @@ int main()
   // int lcm1 = lcm(24, 18);
   // cout << "\nLCM OF 0,18 IS: " << lcm1;
   // rev(3);
-  int n=5;
-  int nth=fib(n);
-  cout<<"nth term is: "<<nth;
-  int arr[]={1,2,3,4};
-  cout<<" "<<arr[2-1];
+  // int n=5;
+  // int nth=fib(n);
+  // cout<<"nth term is: "<<nth;
+  int arr[] = {5, 1, 6, 2, 7, 4, 9};
+  int size = sizeof(arr) / sizeof(arr[0]);
+  bubbleSort(arr, size);
+  cout << " " << arr[2 - 1];
 
   return 0;
 }
